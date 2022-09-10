@@ -1,6 +1,7 @@
 # quandoo-automation-tests
+This is the web test automation project for testing https://www.quandoo.de/en/result?destination=koeln&bookable=true website.
 
-#Framework overview
+# Framework overview
 The framework is a selenium wrapper where every page is represented with a java Class (Page object Model), and selenium methods are sitting in one place where they can be reused.
 
 # Prerequisites Software/Tools
