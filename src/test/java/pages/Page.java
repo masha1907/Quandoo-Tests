@@ -12,22 +12,28 @@ public abstract class Page {
 
   public static WebDriver driver;
 
-  // constant url
+  /**
+   *  constant url
+   */
   protected static String BASE_URL = "https://www.quandoo.de";
-  /*
+
+  /**
    * Constructor injecting the WebDriver interface
-   *
-   * @param webDriver
    */
   public Page(WebDriver driver) {
     Page.driver = driver;
     PageFactory.initElements(driver, this);
   }
 
+  /**
+   * locator valid for all tests
+   */
   @FindBy (id = "CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll")
-  static WebElement acceptCookies;
+   static WebElement acceptCookies;
 
-
+  /**
+   *  this method makes a click on cookies
+   */
   public void clickAcceptCookiesButton () {
     acceptCookies.click();
   }
