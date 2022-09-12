@@ -1,4 +1,4 @@
-# quandoo-automation-tests
+# Quandoo-automation-tests
 This is the web test automation project for testing https://www.quandoo.de/en/result?destination=koeln&bookable=true website.
 
 # Framework overview
